@@ -1,17 +1,15 @@
-def num_primo(numero:int)->int:
-    contador = 0
+def num_primo():
+    numero = int(input("Ingrese un número entero: "))
     if numero > 1:
-        for x in range(numero):
-            if numero % 2 == 0:
-                contador += 1
-        if contador > 2:
-            return "Número no Primo"
-        else:
-            return "Número Primo"
+        for x in range(2,numero):
+            if numero % x == 0:
+                return f"Número {numero} no es Primo"
+            else:
+                return f"Número {numero} es 7Primo"
     else:
         return "Número debe ser mayor a cero"
 
 
 
 
-print(num_primo(15))
+print(num_primo())
