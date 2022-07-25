@@ -1,4 +1,4 @@
-import operaciones as op
+from operaciones import *
 
 def main():
     print(sumar(2,4))
